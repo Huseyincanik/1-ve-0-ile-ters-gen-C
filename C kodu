@@ -1,1 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
 
+int main()
+{
+    int a;
+    while(1){
+    printf("lütfen tek sayi girin...\n");
+        scanf("%d",&a);
+        if(a%2==1)
+            break;
+    }
+    int b[a][a];
+    for(int i=0;i<a;i++){
+        for(int j=0;j<a;j++){
+                b[i][j]=0;
+        }}
+    int bas=0,son=a;
+
+    for(int i=0;i<a;i++){
+        for(int j=bas;j<son;j++){
+        b[i][j]=1;
+        }
+        if(bas!=a/2+1){
+        bas++;
+        son--;}
+
+    }
+
+    for(int i=0;i<a;i++){
+        for(int j=0;j<a;j++){
+            printf("%d ",b[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
